@@ -21,6 +21,14 @@ public class TestClass {
         mm2.stream().flatMap(s->s.getPeerCloudAutonomousVmClusterIds().stream())
                 .filter(s->s.startsWith("abc")).collect(Collectors.toList());
 
+              List<CreateDistributedAutonomousDatabaseShardDetails> aaa = new ArrayList<>();
+        List<CreateDistributedAutonomousDatabaseShardWithDedicatedInfraDetails> bbb = new ArrayList<>();
+        List<CreateDistributedAutonomousDatabaseShardWithDedicatedInfraDetails> ccc =
+                (List<CreateDistributedAutonomousDatabaseShardWithDedicatedInfraDetails>)
+                        (List<?>)
+                                aaa;
+
+
 
     }
 }
